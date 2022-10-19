@@ -1,3 +1,11 @@
+:root
+{
+  --background-color: #fff;
+  --background-light: rgb(0, 77, 165);
+  --text-color: rgb(2, 8, 48);
+  
+
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +13,96 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-inline: 3em;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App
+{
+   display: flex;
+  flex-direction: column;
+align-content: center;
+  align-self: center;
+
+ 
+  text-align: center;
+}
+.img
+{
+  width: 100%;
+  height: 20vh;
+}
+.title
+{
+  font-size: 2em;
+  color: var(--text-color);
+}
+.btns
+{
+
+}
+.btn
+{
+  font-size: 1.1em;
+  padding: .5em 1em;
+  width: 70%;
+  height: 4em;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--background-light);
+  border-radius: .5em;
+  box-shadow: 0 2px 5px var(--background-light);
+  margin: .5em;
+}
+.btn2
+{
+  padding: .5em 1em;
+  width: 70%;
+  font-size: 1.1em;
+  height: 4em;
+  background-color: var(--background-light);
+  color: var(--background-color);
+
+  border: 1px solid var(--background-light);
+  border-radius: .5em;
+  box-shadow: 0 2px 5px var(--background-light);
+  margin: .5em;
+}
+.fill
+{
+  background-color: var(--text-color);
+  padding: .5em 1em;
+  width: 70%;
+  color: var(--background-color);
+  font-weight: bold;
+  border: 1px solid var(--background-light);
+  border-radius: .5em;
+  box-shadow: 0 2px 5px var(--background-light);
+  margin: .5em;
+}
+
+.imgBlock
+{
+  align-content: center;
+  align-self: center;
+}
+.img-block
+{
+  display: flex;
+  gap: 3;
+  padding-block: 5vh;
+  width: 60%;
+  align-self: center;
+  
+}
+.img-block img
+{
+  border-radius: 50%;
+  width: 15vw;
+  height: 10vw;
+  margin-left: 2em;
+}
+

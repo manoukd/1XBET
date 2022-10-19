@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+
 
 function App() {
+  const [copy,setCopy]=useState(false)
+  const text="LK237";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src="/img/index1.png" alt="1xbet" className='img'/>
+      <p className='title'>Best Promo Code </p>
+      <div className='btns'> 
+        <button className="btn" > {text} </button>
+        <button className={copy?"btn fill":"btn2"} onClick={()=>{setCopy(!copy)
+                navigator.clipboard.writeText("LK237")
+          }} > {copy?"Copied":"Copy"} </button>
+      </div>
+      <div className='imgBlock'>
+        <div className='img-block'>
+          <img src="/img/index1.jpg" alt="1xbet" className='img'/>
+          <img src="/img/index.png" alt="1xbet" className='img'/>
+          <img src="/img/index3.jpg" alt="1xbet" className='img'/>
+        </div>
+        <div className='comment'>
+          
+        </div>
+      </div>
+     
     </div>
-  );
+  )
 }
 
 export default App;
