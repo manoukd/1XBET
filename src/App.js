@@ -12,7 +12,7 @@ function App() {
         <button className="btn" > {text} </button>
         <button className={copy?"btn fill":"btn2"} onClick={()=>{setCopy(!copy)
                 navigator.clipboard.writeText("LK237")
-          }} > {copy?"Copied":"Copy"} </button>
+          }} > {copy?"Copied":"Click to Copy"} </button>
       </div>
       <div className='imgBlock'>
         <div className='img-block'>
